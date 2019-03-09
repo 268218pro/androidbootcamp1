@@ -1,19 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/colorAccent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello CA Pratik Kumar Bathwal !!!"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="50dp"
+        android:hint="Name"
+        android:textColor="@color/White"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textSize="24sp"
+        android:textColor="@color/White"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_below="@+id/etName"
+        />
+
+    <EditText
+        android:id="@+id/etPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/White"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_below="@+id/etEmail"
+        />
+
+    <EditText
+        android:id="@+id/etConfirmPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@color/White"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_below="@+id/etPwd"
+        />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etConfirmPwd"
+        android:layout_margin="32dp"
+        android:text="REGISTER"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/White"
+        />
+</RelativeLayout>
